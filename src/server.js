@@ -8,6 +8,7 @@ const errorHandler = require("./helper/errorHandler");
 const app = express();
 app.use(express.json());
 const port = process.env.PORT || 3000;
+
 app.use("/api/user", userRouter);
 app.use(errorHandler);
 
